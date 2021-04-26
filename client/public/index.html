@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/> -->
+		<link rel="stylesheet" href="css/Join.css" />
+		<title>ChessX</title>
+	</head>
+	<body>
+		<div class="back">
+			<div class="header">
+				<div>
+					<h1>ChessX</h1>
+				</div>
+			</div>
+			<div class="para">
+				<p>Share the game name you enter with your friend to play online.</p>
+				<p></p>
+			</div>
+		</div>
+        <form action="chat.html" method="GET" id="joinForm">
+			<div class="joinOuterContainer">
+			<div class="joinInnerContainer">
+			  <h2 class="heading">Join</h2>
+			  <div><input placeholder="Enter your Username" class="joinInput" type="text" id="username" name="username" required/></div>
+			  <div><input placeholder="Enter Game name" class="joinInput mt-20" type="text" id="room" name="room" required/></div>
+			  <div>
+				<select class="joinInput mt-20" name="player" id="player" > 
+				  <option >White</option>
+				  <option >Black</option>
+				</select>
+			  </div> 
+				 <button class="button mt-20">Sign In</button>
+			</div>
+		  </div>
+		</form>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

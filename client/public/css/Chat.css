@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1a1a1d;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #202020;
+  border-radius: 8px;
+  height: 95%;
+  width: 90%;
+  margin: 10px 10px;
+}
+
+.infoBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2979ff;
+  border-radius: 4px 4px 0 0;
+  height: 5%;
+  width: 100%;
+}
+
+.leftInnerContainer {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: white;
+}
+
+.rightInnerContainer {
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.onlineIcon {
+  margin-right: 5%;
+}
+
+.form {
+  display: flex;
+  border-top: 2px solid #d3d3d3;
+  width: 100%;
+}
+
+.input {
+  border: none;
+  border-radius: 0;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+  background-color: #202020;
+  color: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2979ff;
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  width: 20%;
+}
+
+.messageBox {
+  /* background: #f3f3f3; */
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  display: inline-block;
+  max-width: 80%;
+}
+.messages {
+  padding: 5% 0;
+  overflow: auto;
+  flex: auto;
+  background-color: #202020;
+}
+
+.messageText {
+  width: 100%;
+  letter-spacing: 0;
+  float: left;
+  font-size: 1.2em;
+  word-wrap: break-word;
+}
+
+.messageText img {
+  vertical-align: middle;
+}
+
+.messageContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5%;
+  margin-top: 3px;
+}
+
+.sentText {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  color: #828282;
+  letter-spacing: 0.3px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyCenter {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorDark {
+  color: #353535;
+}
+
+.colorGreen {
+  color: #71e475;
+}
+
+.backgroundBlue {
+  background: #2979ff;
+}
+
+.backgroundLight {
+  background: #f3f3f3;
+}
+
+.backgroundGreen {
+  background: #80e784;
+}
+.backgroundRed {
+  background: rgb(247, 65, 65);
+}
+.Grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+  /* display: grid; */
+  place-content: center;
+  background-color: #1a1a1d;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: -30px;
+}
+
+h2 {
+  padding: 8px 1px;
+}
+.gamebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chess-container {
+  height: 100vh;
+  display: grid;
+  /* grid-template-rows: 1fr 2fr 1fr; */
+  place-content: center;
+  /* background-color: #202020; */
+  background-color: #1a1a1d;
+}
+#MyBoard {
+  width: 600px;
+  /* height: 100vh; */
+  margin-bottom: 10px;
+}
+
+.Flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.leftbar {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  /* transform: rotate(180deg); */
+  /* justify-content: space-around; */
+}
+.rightbar {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+
+@media (min-width: 100px) and (max-width: 480px) {
+  .outerContainer {
+    height: 100vh;
+  }
+  .chess-container {
+    margin-top: 792px;
+  }
+  .container {
+    width: 80%;
+    height: 100%;
+  }
+
+  .Flex {
+    flex-direction: column;
+  }
+
+  .Grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .outerContainer {
+    width: 100%;
+  }
+  .chess-container {
+    margin-top: 780px;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    width: 80%;
+  }
+  .Grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
