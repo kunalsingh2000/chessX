@@ -2,7 +2,6 @@
 A web-based Multiplayer-Chess application called **chessX** is created using socket.io.
 The appliction has real-time chat.
 
---
 ### Few Screenshots
 ![Login Page](userLoginpage.jpg)
 ![Game](finalBlackside.jpg)
