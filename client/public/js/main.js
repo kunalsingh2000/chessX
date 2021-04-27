@@ -37,7 +37,7 @@ socket.on('checkplayer',(user)=>{
 // Making onlt legal moves
 function onDragStart (source, piece, position, orientation) {
     // do not pick up pieces if the game is over
-    if (game.game_over()) return false
+    if (game.game_over()||game.in_draw()) return false
   
     // only pick up pieces for the side to move
     if ((game.turn() === 'w' && piece.search(/^b/) !== -1) ||
@@ -219,7 +219,7 @@ function gameReset(playerColor){
     game.reset()
     board.position('start');
     updateStatus();
-    if(playerColor==='white') blackScore++;
+    if(playerColor==='White') blackScore++;
     else whiteScore++;
     whitescoreDis.innerHTML=`WHITE SCORE: ${whiteScore}`;
     blackscoreDis.innerHTML=`BLACK SCORE: ${blackScore}`;
